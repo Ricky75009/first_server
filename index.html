@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>form</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <style>
+  h1{
+  font-family: arial;
+  font-style: italic,bold;
+  font-size: 50px;
+  color: lightpink;
+  
+  
+  }
+  </style>
+  <body>
+    <h1>
+      Hey, give me data!
+    </h1>
+<form   action="/cgi-bin/greeting.py" method="POST">
+  <div>
+    <label for="name">Enter your name: </label>
+    <input type="text" name="name" id="name" required>
+
+    <input type="submit" value="Enter">
+  </div>
+</form>
+  </body>
+</html>
+
+
+
